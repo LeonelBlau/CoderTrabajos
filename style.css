@@ -1,0 +1,742 @@
+/* COLORS 
+#402218
+#865439
+#D7B19D
+#7EB5A6
+#4ca06c
+#005856
+#000000
+*/
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html { 
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body { 
+    background-color: #cec3be98;
+}
+header { 
+    background-color:#00cdd4;
+    
+}
+.stick { 
+  position: sticky;
+  top:0px;
+  display:inline-block;
+  z-index: 10000;
+  height: 50px;
+  font-size: medium;
+  margin-bottom: -10px;
+}
+.stick a:hover {
+  color: #ff4000;
+  font-size: 110%;
+  text-shadow: 0 0 20px #ff4000;
+  text-decoration: none;
+}
+.topMenu {
+    text-decoration: none;
+    font-size: 1em;
+    color: rgb(0, 0, 0);
+    font-family: 'MuseoModerno', cursive;
+    animation-name: Movin;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+.top { 
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+}
+.inputsTop {
+    font-family: 'MuseoModerno', cursive;
+    display: flex;
+    justify-content: flex-end;
+    height: 25px;
+    padding: 0 1.3em;
+    
+    
+    
+}
+.submit {
+    font-family: 'MuseoModerno', cursive;
+    background-color: rgba(255, 255, 255, 0.664);
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+    text-shadow: 0 0 10px rgb(255, 255, 255);
+
+}
+
+/* --------------- NAV MENU ---------------- */
+.boxNav {
+    height: 20em;
+    width: 100%;
+    background: #7EB5A6;
+    background: linear-gradient(90deg,#7EB5A6 70%, #865439 90%, #402218 100%);
+    border-top: mediumblue;
+    border-width: medium;
+}
+
+
+
+header .top :hover {
+  color: #0bf8f4;
+  text-decoration: none;
+}
+.logo { 
+    width: 20em;
+    display: inline-block;
+    animation-name: girando;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes girando {
+  0% {
+    transform: rotate(40deg);
+  }
+  50% {
+    transform: rotate(210deg);
+  }
+  100% {
+    transform: rotate(400deg);
+  }
+  
+} 
+.mainTitle { 
+    font-family: 'MuseoModerno', cursive;
+    font-size: 6em;
+    display: inline-block;
+    justify-content: center;
+    position: absolute;
+    top: 14%;
+    animation-name: Movin;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    text-shadow: 0 0 9px #402218
+}
+@keyframes Movin {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+}
+
+.navUl {
+    font-family: 'MuseoModerno', cursive;
+    list-style-type: none;
+    text-align: center;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    height: 2em;
+    background-color: #005956;
+    border: #865439 solid;
+    box-shadow: 0 0 0.20em, inset 0 0 0.10em;
+    z-index: 10;
+    
+} 
+.navLi2 { 
+    list-style-type: none;
+    text-align: center;
+    font-size: 1em;
+    height: 1.3em;
+    width: 25em;
+    padding-bottom: 5%;
+    background-color: #4ca06c;
+    border: rgb(209, 86, 209) solid;
+    display: none;
+    box-shadow: 0 0 0.20em, inset 0 0 0.10em; 
+    
+  
+}
+.navUl a:hover {
+    color: #ff4000;
+    font-size: 110%;
+    text-shadow: 0 0 20px #ff4000;
+    text-decoration: none;
+    
+}
+nav li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+  
+/*---------- MAIN ------------*/
+
+.whatsapp {
+display: flex;
+justify-content: flex-end;
+}
+.logoWhats {
+    position : fixed;
+    bottom : 0;
+    margin-bottom: 2em;
+    right: 4em;
+    width: 7em;
+    height: 7em;
+    cursor: pointer;
+}
+.title2 {
+  display: flex;
+  justify-content: center;
+  font-family: 'MuseoModerno', cursive;
+  font-size: 30px;
+  color: #005856;
+   
+}
+.title3 {
+  display: flex;
+  justify-content: center;
+  font-family: 'MuseoModerno', cursive;
+  font-size: 30px;
+  color: #005856;
+   text-shadow: 0 0 20px #402218;
+   margin-top: 20px;
+}
+.creditcard {
+  width: 2rem;
+}
+
+@keyframes Movin2 {
+  0% {
+    transform: translate(0);
+  }
+  50% {
+    transform: translate(-400px);
+    color: #402218;
+  }
+  75% {
+    transform: translate(400px);
+    color: #005856;
+  }
+  100% {
+    transform: translate(0px);
+  }
+}
+
+
+.p1{
+  display: flex;
+  justify-content: center;
+  align-content: flex-end;
+  flex-direction: column;
+  margin-left: 10%;
+  margin-top: 10%
+}
+.coming { 
+  width: 100%;
+}
+.tdImg {
+  width: 400px;
+  margin: 20px;
+}
+.seguimiento {
+  grid-row: auto;
+}
+.carousel-inner {
+  width: 100%;
+  height: 500px;
+  background: radial-gradient(circle, white 0%, #7EB5A6 30%, #865439 10%, #402218 40%,#000000 100%);
+}
+
+.carousel-item {
+  width: auto;
+}
+.imgC {
+  width: 400px;
+  margin: 0 0px;
+}
+.imgC2 {
+  width: 400px;
+  margin: 0 350px;
+  
+}
+.imgC3 {
+  width: 400px;
+  margin: 0 750px;
+}
+.imgC4 {
+  width: 400px;
+  margin: 0 1250px;
+}
+
+.text-muted {
+  font-size: 20px;
+}
+
+.container-card{
+	width: 100%;
+	display: flex;
+	max-width: 1100px;
+	margin: auto;
+}
+.title-cards{
+	width: 100%;
+	max-width: 1080px;
+	margin: auto;
+	padding: 30px;
+	margin-top: 10px;
+	text-align: center;
+}
+.card{
+	width: 100%;
+	margin: 40px;
+	border-radius: 30px;
+	overflow: hidden;
+	background:#ffffff;
+	box-shadow: 0px 1px 10px #ff4000;
+	transition: all 400ms ease-out;
+  font-family: 'MuseoModerno', cursive;
+}
+.card:hover{
+	box-shadow: 5px 5px 20px #ff400086);
+	transform: translateY(-12%);
+}
+.card img{
+	width: 100%;
+	height: 170px;
+}
+.card .contenido-card{
+	padding: 15px;
+	text-align: center;
+}
+.card .contenido-card h3{
+	margin-bottom: 15px;
+	color: #ff4000;
+}
+.card .contenido-card p{
+	line-height: 1.8;
+	color: #000000;
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+.card .contenido-card a{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    max-width: max-content;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    color: rgb(255, 102, 0);
+    line-height: 0;
+    margin: auto;
+    font-size: 1em;
+    padding: 0 1em;
+    font-family: 'MuseoModerno', cursive;
+    box-shadow: 0 0 20px rgb(255, 102, 0);
+}
+.card .contenido-card a:hover{
+	background: #ff400086;
+	color: #fff;
+  text-decoration: none;
+}
+
+.btn-dark {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    max-width: max-content;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    color: rgb(255, 102, 0);
+    line-height: 0;
+    margin: auto;
+    font-size: 1em;
+    padding: 0 1em;
+    font-family: 'MuseoModerno', cursive;
+    box-shadow: 0 0 5px rgb(255, 102, 0);
+}
+
+
+
+/*----------------FOOTER----------------*/
+  
+  .footer {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 30px 30px 20px 30px;
+    color: #2f2f2f;
+    background-color: #005856;
+    border-top: 1px solid #4ca06c;
+    font-size: 20px;
+    height: auto;
+  }
+  footer .navUl2 :hover {
+    color: rgb(255, 102, 0);
+    text-decoration: none;
+  }
+  .footerMail {
+    margin-right: 1.25em;
+    margin-bottom: 2em;
+  } 
+  .navTitle {
+    font-weight: 400;
+    font-size: 15px;
+    font-family: 'MuseoModerno', cursive;
+    color: rgb(255, 255, 255);
+  }
+  
+  .footerBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    max-width: max-content;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    color: rgb(255, 102, 0);
+    line-height: 0;
+    margin: 0.6em 0;
+    font-size: 1em;
+    padding: 0 1em;
+    font-family: 'MuseoModerno', cursive;
+    box-shadow: 0 0 10px rgb(255, 102, 0);
+    text-shadow: 0 0 20px rgb(255, 102, 0);
+  }
+
+
+  .footer ul {
+    list-style: none;
+    padding-left: 5em;
+    font-family: 'MuseoModerno', cursive;
+  }
+  
+  .footer li {
+    line-height: 2em;
+  }
+  
+  .footer a {
+    text-decoration: none;
+  }
+  
+  .footerNav {
+    display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      color: rgb(255, 255, 255);
+  }
+  
+  .footerNav{
+    flex-grow: 1;
+    margin-right: 1.25em;
+  }
+  
+  .navUl2 a {
+    color: rgba(255, 255, 255, 0.527);
+  }
+  
+  .legal {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    color: rgba(255, 255, 255, 0.527);
+    font-size: 10px
+  }
+
+
+/* Suscribirse */ 
+
+form .container {
+  background-image: url(./img/BACKGROUNDS/backgroundarb.jpg);
+  background-size: 100%;
+}
+
+
+
+form ul {
+  list-style: none;
+}
+
+form ul li {
+  font-family: 'MuseoModerno', cursive;
+  font-size: 20px;
+  color: #d33800;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15px;
+  text-shadow: 0 0 10px black;
+}
+
+form ul li .btn-warning {
+
+    display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 36px;
+      max-width: max-content;
+      background-color: rgb(255, 255, 255);
+      border-radius: 10px;
+      color: rgb(255, 102, 0);
+      line-height: 0;
+      margin: auto;
+      font-size: 1em;
+      padding: 0 1em;
+      font-family: 'MuseoModerno', cursive;
+      box-shadow: 0 0 5px rgb(255, 102, 0);
+}
+
+.sus {
+  background-color: #7EB5A6;
+}
+
+ul .li--color2 {
+  color: #ffffff;
+  text-shadow: 0 0 10px black;
+}
+
+ul .li--color2 .tarjetaSus {
+  width: 30px;
+  padding-left: 2px;
+}
+
+/* Compras */
+.compras {
+  width: 20%;
+	height: 400px;
+  border-radius: 20%;
+  box-shadow: 0 0 5px rgb(255, 102, 0);
+}
+.seguimiento {
+  font-family: 'MuseoModerno', cursive;
+  font-size: 20px;
+}
+.background{
+  background-image: url(./img/BACKGROUNDS/backgroundarb.jpg);
+  background-size: 100%;
+}
+ /*favoritos*/ 
+.backgroundfav {
+  background-image: url(./img/BACKGROUNDS/fondo-inconsútil-del-modelo-del-vector-de-la-nuez-del-roble-de-las-bellotas-53677769.jpg);
+}
+ .fav {
+  width: 90%;
+	height: 1000px;
+  border-bottom-right-radius: 20%;
+  border-top-left-radius: 20%;
+  box-shadow: 0 0 5px rgb(255, 102, 0);
+  border-style: groove;
+
+ }
+.float {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  top: 20px;
+}
+.labels {
+ display: flex;
+  font-size: 20px;
+  align-content: center;
+  font-family: 'MuseoModerno', cursive;
+}
+.boxFav {
+  padding-top: 60px;
+  background-color: rgba(253, 252, 251, 0.829);
+  display: block;
+  
+  max-width: max-content;
+}
+.descrip {
+  font-family: 'MuseoModerno', cursive;
+}
+.backgroundm {
+  background:rgb(231, 202, 202);
+}
+.btnfav {
+  
+  justify-content: center;
+  height: 36px;
+  max-width: max-content;
+  background-color: rgba(248, 97, 60, 0.822);
+  border-radius: 10px;
+  color: rgb(0, 0, 0);
+  line-height: 0;
+  margin: auto;
+  font-size: 1em;
+  padding: 0 1em;
+  font-family: 'MuseoModerno', cursive;
+  
+}
+
+
+/* media queries */
+
+
+@media (max-width: 1024px){
+  .ardillaCorre {
+    display: none;
+  }
+  .boxNav {
+    height: 20em;
+    width: 100%;
+    background: #7EB5A6;
+    background: linear-gradient(90deg,#7EB5A6 70%, #865439 90%, #402218 100%);
+}
+.background {
+  background-image: none;
+}
+.mainTitle { 
+font-size: 6em;
+position: absolute;
+top: 10%;
+}
+.logoWhats {
+  margin-bottom: 8em;
+    right: 4em;
+}
+.imgC {
+  margin: 0 73%;
+}
+.imgC2 {
+  margin: 0 73%;
+}
+.imgC3 {
+  margin: 0 73%;
+}
+.imgC4 {
+  margin: 0 73%;
+}
+.stick { 
+  height: 60px;
+  font-size: medium;
+}
+.compras {
+  width: 30%;
+}
+.fav {
+  
+ }
+}
+
+@media (max-width: 480px){
+  .ardillaCorre {
+    display: none;
+  }
+  form .container {
+    background-image: none;
+    background-size: 100%;
+  }
+  .container-card{
+		flex-wrap: wrap;
+	}
+	.card{
+		margin: 15px;
+	}
+  .compras {
+    width: 70%;
+  }
+
+  .logo { 
+      width: 10em;
+      display: inline-block;
+  }
+  .boxNav {
+          height: 10em;
+          width: 100%;
+          background: #7EB5A6;
+          background: linear-gradient(90deg,#7EB5A6 70%, #865439 90%, #402218 100%);
+   }
+   .mainTitle { 
+      font-size: 4em;
+      position: absolute;
+      top: 10%;
+  }
+  .navUl {
+      font-size: 1.3em; 
+  }
+  .inputsTop{
+      height: 26px;
+      margin: 0.6em 0;
+      font-size: 0.5em;
+      padding: 0 1.3em;
+  }
+  .topMenu {
+      font-size: 1em;
+  }
+  .logoWhats {
+      width: 5em;
+      height: 5em;
+  }
+  .title2 {
+    font-size: 2em;
+  }
+  .imgC {
+    margin: 0 0px;
+  }
+  .imgC2 {
+    margin: 0 0px;
+  }
+  .imgC3 {
+    margin: 0 0px;
+  }
+  .imgC4 {
+    margin: 0 0px;
+  }
+  .stick { 
+    height: 70px;
+    font-size: small;
+  }
+.fav {
+  height: 90%;
+}
+}
+
+
+.ardillaCorre {
+  width: 2.3%;
+  animation-name: Movin3;
+    animation-duration: 7s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    opacity: 0;
+}
+@media (max-width: 768px) {
+  .container-card{
+		flex-wrap: wrap;
+	}
+	.card{
+		margin: 15px;
+	}
+} 
+
+
+@keyframes Movin3 {
+  0% {
+    transform: translate(0);
+    opacity: 0;
+  }
+  25% {
+    transform: translate(60px);
+    opacity: 1;
+  }
+  75% {
+    transform: translate(200px);
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(300px);
+    opacity: 0;
+  }
+}
+
+
